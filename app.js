@@ -4,8 +4,8 @@ const port = 8300;
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
-// io.origins(['https://mahm.me:443']);
-io.origins(['http://localhost:3000']);
+io.origins(['https://trading.mahm.me:443']);
+// io.origins(['http://localhost:3000']);
 io.set('origins', '*:*');
 
 let users = [];
